@@ -14,6 +14,16 @@ function App() {
     minutes: 0,
   });
 
+  useEffect(() => {
+    setInterval(() => updateCountdown(), 1000);
+  }, []);
+
+  const updateCountdown = () => {
+    if (countdownDate) {
+      const currentTime = new Date().getTime();
+    }
+  };
+
   return (
     <div className="App">
       <header className="App-header">
@@ -33,7 +43,7 @@ function App() {
         <div className="coaches">
           <h1>
             In that time span, we've had 7 coaches, 2 owners, 2 stadiums, 4
-            jerseys, 2 all-stars and 0 WINNING SEASONS. <span>#FireLuke</span>
+            jerseys, 2 all-stars and 0 WINNING SEASONS.
           </h1>
         </div>
       </header>
