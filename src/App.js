@@ -14,20 +14,27 @@ function App() {
     minutes: 0,
   });
 
-  
-
   return (
     <div className="App">
       <header className="App-header">
         <div>
           <h1>
-            The <span>Sacramento Kings</span> have NOT made the playoffs in:
+            The <span>Sacramento Kings</span> have NOT made the playoffs since
+            April 25, 2006. That's
           </h1>
-          <h2>15 years</h2>
-          <h2>3 months</h2>
-          <h2>25 days</h2>
-          <h2>24 hours</h2>
-          <h2>14 minutes</h2>
+          <div className="time-holder">
+            <h2>15 years </h2>
+            <h2>3 months</h2>
+            <h2>25 days</h2>
+            <h2>24 hours</h2>
+            <h2>14 minutes</h2>
+          </div>
+        </div>
+        <div className="coaches">
+          <h1>
+            In that time span, we've had 7 coaches, 2 owners, 2 stadiums, 4
+            jerseys, 2 all-stars and 0 WINNING SEASONS. <span>#FireLuke</span>
+          </h1>
         </div>
       </header>
     </div>
